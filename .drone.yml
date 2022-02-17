@@ -1,0 +1,65 @@
+kind: pipeline
+name: default
+
+steps:
+
+#*************************** Sonar Scan *****************************************************
+  - name: Quality Analysis
+    image: aosapps/drone-sonar-plugin:1.0
+    environment:
+      sonar_host: https:/sq.mykeyrus.tn
+      sonar_token: d8b18df42737d47605af4daedf9473763885294d
+    commands:
+      - sonar-scanner -Dsonar.projectKey=${DRONE_REPO_NAME}
+        -Dsonar.projectName=${DRONE_REPO_NAME}
+        -Dsonar.host.url=$sonar_host
+        -Dsonar.login=$sonar_token
+        -Dsonar.branch.name=${DRONE_BRANCH}
+    when:
+      branch:
+        - main
+        - develop
+        - dev
+        - master
+      event:
+        - push
+        - pull_request
+
+#*************************** Build Front Admin Image *****************************************************
+  - name: Build Frontend Image
+    image: plugins/docker
+    settings:
+      registry: registry.mykeyrus.tn
+      username: admin
+      password: eqx#123
+      repo: registry.mykeyrus.tn/samea/frontadmin
+      tags: latest
+    when:
+      branch:
+        - develop
+        - main
+        - dev
+        - master
+      event:
+        - push
+
+#*************************** Deploy Front Admin To Integration *****************************************************
+
+  - name: Deploy Front Admin To Integration
+    image: appleboy/drone-ssh
+    settings:
+      host: 188.165.159.208
+      username: talel
+      password: eqx#123
+      port: 22
+      script:
+        - cd ~/quarkus-poc/deploy
+        - sh deploy-front-admin
+    when:
+      branch:
+        - develop
+        - main
+        - dev
+        - master
+      event:
+        - push
