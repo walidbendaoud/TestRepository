@@ -1,0 +1,21 @@
+{
+  "TemplateList": "Template List",
+  "TemplateSelect": " Choose a template",
+  "freeTemplate": "Empty template",
+  "addTemplate": "Add template",
+  "all": "All",
+  "predefined": "Predefined",
+  "personalized": "Personalized",
+  "search": "Search",
+  "deleteConfirm": "Are you sure delete this Template?",
+  "yes": "Yes",
+  "no": "No",
+  "preview": "Preview",
+  "type": "Type",
+  "title": "Title",
+  "CreatedOn": "Created On",
+  "Modified": "Modified On",
+  "CreatedBy": "Created By",
+  "Agregator": "Agregator",
+  "actions": "Actions"
+}

@@ -1,0 +1,21 @@
+{
+  "TemplateList": "Template List",
+  "TemplateSelect": "Choisir un template",
+  "freeTemplate": "Template vierge",
+  "addTemplate": "Ajouter une template",
+  "all": "Tous",
+  "predefined": "Prédéfinis",
+  "personalized": "Personnalisé",
+  "search": "chercher",
+  "deleteConfirm": "Êtes-vous sûr de supprimer ce modèle ?",
+  "yes": "Oui",
+  "no": "Non",
+  "preview": "Aperçu",
+  "type": "Type",
+  "title": "Titre",
+  "CreatedOn": "Créee le",
+  "Modified": "Modifiée le",
+  "CreatedBy": "Créee par",
+  "Agregator": "Agrégateur",
+  "actions": "Actions"
+}

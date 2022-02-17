@@ -1,0 +1,9 @@
+{
+  "routes":[
+    {
+      "path":"/",
+      "name":"home",
+      "page" :"/-index.vue"
+    }
+  ]
+}
