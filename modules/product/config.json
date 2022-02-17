@@ -1,0 +1,13 @@
+{
+  "routes":[
+    
+  ],
+  "serverMiddleware":[
+    {
+      "path": "/api",
+      "handler": "index"
+    }
+  ],
+  "stores":[
+  ]
+}
