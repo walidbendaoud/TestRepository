@@ -1,0 +1,41 @@
+.addBtn {
+  text-align: right;
+}
+.filterMenu {
+  padding-bottom: 20px;
+  label {
+    padding-right: 10px;
+  }
+}
+.aggregators {
+  list-style-type: none;
+}
+div.predefined {
+  text-align: center;
+  &.tohide {
+    display: none;
+  }
+}
+.inputForm {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 20px;
+  input {
+    max-width: 300px;
+    margin-left: 20px;
+  }
+}
+#components-button-demo-button-group {
+  & > h4 {
+    margin: 16px 0;
+    font-size: 14px;
+    line-height: 1;
+    font-weight: normal;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  .ant-btn-group {
+    margin-right: 8px;
+  }
+}

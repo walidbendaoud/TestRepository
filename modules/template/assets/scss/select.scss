@@ -1,0 +1,36 @@
+@import 'variables.scss';
+
+.icons-list .anticon {
+  margin-right: 6px;
+  font-size: 160px;
+}
+.boxSelect {
+  display: flex;
+  flex-wrap: wrap;
+  .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 3px solid $VeryLightGrey;
+    padding-bottom: 20px;
+    margin: 40px;
+    padding: 20px;
+    max-width: 240px;
+    .img {
+      min-height: 244px;
+      img {
+        height: auto;
+        width: 150px;
+        padding: 20px;
+      }
+    }
+    .title {
+      white-space: normal;
+      text-align: center;
+    }
+    .addBtn {
+      text-align: right;
+    }
+  }
+}

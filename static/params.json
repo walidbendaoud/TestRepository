@@ -1,0 +1,38 @@
+[
+  {
+    "title": "$serviceName"
+  },
+  {
+    "title": "$serviceDescription"
+  },
+  {
+    "title": "$serviceLogo"
+  },
+  {
+    "title": "$mediaName"
+  },
+  {
+    "title": "$mediaImage"
+  },
+  {
+    "title": "$mediaVideo"
+  },
+  {
+    "title": "$mediaOrdre"
+  },
+  {
+    "title": "$serviceRecommended"
+  },
+  {
+    "title": "$price"
+  },
+  {
+    "title": "$currency"
+  },
+  {
+    "title": "$passService"
+  },
+  {
+    "title": "$urlService"
+  }
+]
