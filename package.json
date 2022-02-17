@@ -1,0 +1,47 @@
+{
+  "name": "nuxt-ddd",
+  "version": "1.0.0",
+  "private": true,
+  "lint-staged": {
+    "**/*.{js,jsx,ts,vue}": [
+      "eslint --ext .ts,.js,.vue --fix"
+    ],
+    "**/*.{js,jsx,ts,tsx,json,css,scss,md,vue}": [
+      "prettier --write"
+    ]
+  },
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint&fix": "eslint --fix --ext .ts,.js,.vue .",
+    "lint": "eslint --ext .ts,.js,.vue .",
+    "pre-commit": "lint-staged",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "ant-design-vue": "^1.7.6",
+    "core-js": "^3.15.1",
+    "express": "^4.17.1",
+    "nuxt": "latest",
+    "vue-slick-carousel": "^1.0.6"
+  },
+  "devDependencies": {
+    "@nuxt/bridge": "npm:@nuxt/bridge-edge",
+    "@nuxt/types": "^2.15.7",
+    "@nuxt/typescript-build": "^2.1.0",
+    "@nuxtjs/i18n": "^7.1.0",
+    "@nuxtjs/eslint-config-typescript": "^7.0.2",
+    "eslint": "^8.1.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^11.2.6",
+    "node-sass": "^6.0.0",
+    "nuxt-env": "^0.1.0",
+    "prettier": "2.4.1",
+    "sass-loader": "^10.1.1",
+    "vuedraggable": "^2.24.3"
+  }
+}
